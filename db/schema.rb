@@ -11,25 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140531112822) do
+ActiveRecord::Schema.define(version: 20140531134612) do
 
   create_table "addresses", force: true do |t|
     t.string   "street"
     t.string   "city"
     t.string   "state"
     t.string   "nation"
-    t.integer  "zipcode"
-    t.integer  "customer_id"
+    t.string   "zipcode"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "addresses", ["customer_id"], name: "index_addresses_on_customer_id"
-
   create_table "customers", force: true do |t|
     t.string   "name"
     t.string   "surname"
-    t.datetime "birthdate"
+    t.date     "birthdate"
     t.string   "nickname"
     t.string   "password"
     t.integer  "address_id"
@@ -47,5 +44,15 @@ ActiveRecord::Schema.define(version: 20140531112822) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "providers", force: true do |t|
+    t.string   "name"
+    t.string   "vat"
+    t.integer  "address_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "providers", ["address_id"], name: "index_providers_on_address_id"
 
 end
