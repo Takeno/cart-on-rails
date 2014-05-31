@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   before_action :current_user
+  before_filter :confirm_logged_in, :only => [:logout]
   protect_from_forgery with: :exception
 
   def index
@@ -25,9 +26,22 @@ class ApplicationController < ActionController::Base
   	redirect_to root_url
   end
 
+
+  protected
+    def confirm_logged_in
+      unless session[:current_user_id]
+          flash[:alert] = "Please log in"
+          redirect_to login_path
+          return false
+      else
+          return true
+      end
+    end
+
   private 
 
   def current_user
   	@_current_user ||= session[:current_user_id] && Customer.find_by_id(session[:current_user_id])
   end
+
 end
