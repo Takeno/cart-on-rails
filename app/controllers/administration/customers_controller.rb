@@ -1,4 +1,4 @@
-class CustomersController < ApplicationController
+class Administration::CustomersController < AdministrationController
   before_action :set_customer, only: [:show, :edit, :update, :destroy]
 
   # GET /customers
@@ -29,8 +29,8 @@ class CustomersController < ApplicationController
 
     respond_to do |format|
       if @customer.save
-        format.html { redirect_to @customer, notice: 'Customer was successfully created.' }
-        format.json { render :show, status: :created, location: @customer }
+        format.html { redirect_to [:administration, @customer], notice: 'Customer was successfully created.' }
+        format.json { render :show, status: :created, location: [:administration, @customer] }
       else
         format.html { render :new }
         format.json { render json: @customer.errors, status: :unprocessable_entity }
@@ -43,8 +43,8 @@ class CustomersController < ApplicationController
   def update
     respond_to do |format|
       if @customer.update(customer_params)
-        format.html { redirect_to @customer, notice: 'Customer was successfully updated.' }
-        format.json { render :show, status: :ok, location: @customer }
+        format.html { redirect_to [:administration, @customer], notice: 'Customer was successfully updated.' }
+        format.json { render :show, status: :ok, location: [:administration, @customer] }
       else
         format.html { render :edit }
         format.json { render json: @customer.errors, status: :unprocessable_entity }
@@ -57,7 +57,7 @@ class CustomersController < ApplicationController
   def destroy
     @customer.destroy
     respond_to do |format|
-      format.html { redirect_to customers_url, notice: 'Customer was successfully destroyed.' }
+      format.html { redirect_to administration_customers_url, notice: 'Customer was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
