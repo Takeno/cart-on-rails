@@ -1,0 +1,35 @@
+<h1>Listing providers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Vat</th>
+      <th>Address</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @providers.each do |provider| %>
+      <tr>
+        <td><%= provider.name %></td>
+        <td><%= provider.vat %></td>
+        <td>
+          <%= provider.address.street %>, 
+          <%= provider.address.zipcode %>,
+          <%= provider.address.city %>,
+          <%= provider.address.state %>,
+          <%= provider.address.nation %>
+        </td>
+        <td><%= link_to 'Show', [:administration, provider] %></td>
+        <td><%= link_to 'Edit', edit_administration_provider_path(provider) %></td>
+        <td><%= link_to 'Destroy', [:administration, provider], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Provider', new_administration_provider_path %>

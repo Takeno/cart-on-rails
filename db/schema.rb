@@ -18,15 +18,18 @@ ActiveRecord::Schema.define(version: 20140531134612) do
     t.string   "city"
     t.string   "state"
     t.string   "nation"
-    t.string   "zipcode"
+    t.integer  "zipcode"
+    t.integer  "customer_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "addresses", ["customer_id"], name: "index_addresses_on_customer_id"
+
   create_table "customers", force: true do |t|
     t.string   "name"
     t.string   "surname"
-    t.date     "birthdate"
+    t.datetime "birthdate"
     t.string   "nickname"
     t.string   "password"
     t.integer  "address_id"
