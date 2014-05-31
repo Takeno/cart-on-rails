@@ -1,0 +1,417 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"gall",
+				"galleryTitle"
+			],
+			[
+				"I",
+				"IAdvanceIbracoBundle"
+			],
+			[
+				"__",
+				"__SOURCE__"
+			],
+			[
+				"galle",
+				"gallery-item"
+			],
+			[
+				"Gall",
+				"GalleryItem"
+			],
+			[
+				"galler",
+				"galleryItem"
+			],
+			[
+				"Galle",
+				"GalleryItem"
+			],
+			[
+				"Gal",
+				"Gallery"
+			],
+			[
+				"fu",
+				"fullpath"
+			],
+			[
+				"rating",
+				"ratingsCount"
+			],
+			[
+				"fo",
+				"foreach	foreach …"
+			],
+			[
+				"Proje",
+				"ProjectStatus"
+			],
+			[
+				"zip",
+				"zipfile"
+			],
+			[
+				"zp",
+				"zipfile"
+			],
+			[
+				"getUpl",
+				"getUploadWebPath"
+			],
+			[
+				"numer",
+				"numeroFattura"
+			],
+			[
+				"invo",
+				"invoiceGenerator"
+			],
+			[
+				"invoce",
+				"invoiceRow"
+			],
+			[
+				"invoices",
+				"invoiceRows"
+			],
+			[
+				"getclass",
+				"get_class_methods"
+			],
+			[
+				"arramer",
+				"array_merge"
+			],
+			[
+				"getcl",
+				"get_class_methods"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 54.0,
+		"selected_items":
+		[
+			[
+				"Package Control: remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/db/migrate/20140531084506_create_products.rb",
+		"/tmp/fz3temp-1/item.php",
+		"/tmp/error.html",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/config/validation.yml",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/config/routing/site/site.yml",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Controller/MobileController.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Controller/SecurityController.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Controller/SiteController.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/EventListener/ProjectListener.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/EventListener/UserListener.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Controller/ProjectController.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/config/services.yml",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Event/EventType.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Entity/LogEntry.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Event/LoggableEvent.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Controller/DefaultController.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Event/ViewEvent.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Event/LoginEvent.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/config/routing/administration/administrator.yml",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Site/project.html.twig",
+		"/tmp/fz3temp-1/import.php",
+		"/tmp/fz3temp-1/datausers.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/config/routing.yml",
+		"/home/matteo/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/AdminBundle/Resources/public/admin/css/sb-admin.css",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Site/login.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/AdminBundle/Resources/views/Admin/left-menu.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/AdminBundle/Resources/views/Admin/base.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/AdminBundle/Resources/views/Admin/demo-top-links.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Admin/base.html.twig",
+		"/media/matteo/Dati/workspace/gastosc/www/sf2/Symfony/src/Impadvance/GasToscBundle/Controller/SitoController.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/app/config/security.yml",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/AdminBundle/Resources/views/Security/login.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/AdminBundle/Controller/SecurityController.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/config/routing/administrator.yml",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/AdminBundle/Resources/config/routing.yml",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/app/config/routing.yml",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Project/edit.html.twig",
+		"/media/matteo/Dati/workspace/gastosc/www/sf2/Symfony/src/Impadvance/GasToscBundle/Resources/config/services.yml",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Preview/index.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Preview/Video/show.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Preview/Gallery/show.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Preview/Gallery/edit.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/config/routing/preview.yml",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Form/Type/VideoType.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Controller/PreviewController.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Controller/Preview/VideoController.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Controller/Preview/GalleryController.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Preview/Video/edit.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Preview/Video/new.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Preview/Gallery/new.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Entity/Video.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Entity/GalleryItem.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Controller/CommentController.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Form/Type/GalleryItemType.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Entity/Gallery.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Entity/Preview.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/app/AppKernel.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Form/Type/GalleryType.php",
+		"/media/matteo/Dati/workspace/gastosc/www/sf2/Symfony/src/Impadvance/GasToscBundle/Resources/views/Sito/product.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Entity/GalleryIcon.php",
+		"/tmp/fz3temp-1/mail.php",
+		"/tmp/fz3temp-1/form.php",
+		"/media/matteo/Dati/Dropbox/Personal/dati server.txt",
+		"/tmp/jQuery-File-Upload-9.5.7/server/php/UploadHandler.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Form/Type/GalleryItemsType.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Form/Type/CommentType.php",
+		"/tmp/jQuery-File-Upload-9.5.7/css/jquery.fileupload.css",
+		"/tmp/jQuery-File-Upload-9.5.7/js/jquery.fileupload.js",
+		"/tmp/jQuery-File-Upload-9.5.7/js/jquery.iframe-transport.js",
+		"/tmp/jQuery-File-Upload-9.5.7/server/php/index.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/app/config/config.yml",
+		"/tmp/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js",
+		"/tmp/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.js",
+		"/tmp/jquery-ui-1.10.4.custom/css/no-theme/jquery-ui-1.10.4.custom.css",
+		"/media/matteo/Dati/workspace/lamp/www/cmi-admin/views/segnalazione-meteo.html.twig",
+		"/media/matteo/Dati/workspace/lamp/www/cmi-admin/views/segnalazioni-meteo.html.twig",
+		"/media/matteo/Dati/workspace/grafi/test-grafi.c",
+		"/media/matteo/Dati/workspace/grafi/grafi.c",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Entity/Project.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Preview/Video/newVideo.html.twig",
+		"/media/matteo/Dati/.Trash-1000/files/index.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Preview/showVideo.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Preview/newVideo.html.twig",
+		"/tmp/Template Base Joomla/templateDetails.xml",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/composer.json",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Form/Type/ProjectType.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Project/new.html.twig",
+		"/media/matteo/Dati/workspace/siw/Vagrantfile",
+		"/media/matteo/8077e098-9270-4a4a-93ae-ae6b1439fb52/home/matteo/Copy/workspace/gastosc/www/sf2/Symfony/src/Impadvance/GasToscBundle/Entity/Ingrediente.php",
+		"/media/matteo/8077e098-9270-4a4a-93ae-ae6b1439fb52/home/matteo/Copy/workspace/gastosc/www/sf2/Symfony/src/Impadvance/GasToscBundle/Form/Type/RicettaType.php",
+		"/tmp/Tesi.java",
+		"/tmp/Studente.java",
+		"/tmp/fz3temp-1/upload.html.php",
+		"/media/matteo/Dati/Dropbox/Matteo&Marco/poo/src/it/uniroma3/diadia/DiaDia.java",
+		"/media/matteo/Dati/Dropbox/Matteo&Marco/poo/src/it/uniroma3/diadia/ambienti/Labirinto.java",
+		"/media/matteo/Dati/Dropbox/Matteo&Marco/poo/src/it/uniroma3/diadia/giocatore/Giocatore.java",
+		"/media/matteo/Dati/Dropbox/Matteo&Marco/poo/src/it/uniroma3/diadia/giocatore/Borsa.java",
+		"/media/matteo/Dati/Dropbox/Matteo&Marco/poo/src/it/uniroma3/diadia/attrezzi/Attrezzo.java",
+		"/tmp/fz3temp-1/step_3.tpl.php",
+		"/tmp/fz3temp-1/docman.php",
+		"/tmp/fz3temp-1/upload.php",
+		"/tmp/fz3temp-1/upload.transfer.php",
+		"/tmp/fz3temp-1/documents.php",
+		"/tmp/fz3temp-1/upload.http.html.php",
+		"/tmp/fz3temp-1/documents.html.php",
+		"/tmp/fz3temp-1/upload.transfer.html.php",
+		"/tmp/fz3temp-1/page_docupload.tpl.php",
+		"/media/matteo/8077e098-9270-4a4a-93ae-ae6b1439fb52/home/matteo/Copy/workspace/gastosc/www/sf2/Symfony/src/Impadvance/GasToscBundle/Form/Type/CategoriaType.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Project/show.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Project/index.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Entity/ProjectStatus.php",
+		"/media/matteo/8077e098-9270-4a4a-93ae-ae6b1439fb52/home/matteo/Copy/workspace/gastosc/www/sf2/Symfony/src/Impadvance/GasToscBundle/Entity/Categoria.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Entity/Repository/ProjectRepository.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Tests/Controller/CommentControllerTest.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Entity/Rating.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Entity/User.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Entity/Comment.php",
+		"/media/matteo/Dati/workspace/ibraco-online-prod/components/com_k2/models/item.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/config/routing/comment.yml",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Comment/index.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Comment/show.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Comment/edit.html.twig",
+		"/home/matteo/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/AdminBundle/Command/CrudCommand.php",
+		"/media/matteo/Dati/workspace/ibraco/Vagrantfile",
+		"/media/matteo/8077e098-9270-4a4a-93ae-ae6b1439fb52/home/matteo/Copy/workspace/lamp/Vagrantfile",
+		"/media/matteo/8077e098-9270-4a4a-93ae-ae6b1439fb52/home/matteo/Copy/workspace/gastosc/www/sf2/Symfony/src/Impadvance/GasToscBundle/Resources/views/Sito/product.html.twig"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"itemRatingThanks",
+			"ITEM",
+			"< ",
+			"<td> .*</td>",
+			"< ",
+			"<td> .*</td>",
+			"< ",
+			"delete",
+			"showAction",
+			"_showTabPermissions",
+			"editDocumentForm",
+			"created",
+			"fetchMethodForm",
+			"docupload",
+			"        ",
+			"HEAD",
+			"run_macro_file",
+			"ctrl+d",
+			"delete",
+			"ricetteCorrelate"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"PROJECT",
+			"&lt; ",
+			"<td>asdasd</td>",
+			"&lt; ",
+			"<td>asdasd</td>",
+			"&lt; "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"project": "cart-on-rails.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/media/matteo/Dati/workspace/gastosc/gastosc.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": false,
+	"side_bar_visible": true,
+	"side_bar_width": 180.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
