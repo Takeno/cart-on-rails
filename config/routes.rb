@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'catalog', to: 'catalog#index'
+  get 'catalog/:id', to: 'catalog#show', as: 'showProduct'
 
   namespace :administration do
     resources :products
