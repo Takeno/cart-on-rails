@@ -18,8 +18,7 @@ ActiveRecord::Schema.define(version: 20140531152524) do
     t.string   "city"
     t.string   "state"
     t.string   "nation"
-    t.integer  "zipcode"
-    t.integer  "customer_id"
+    t.string   "zipcode"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -40,7 +39,7 @@ ActiveRecord::Schema.define(version: 20140531152524) do
   create_table "customers", force: true do |t|
     t.string   "name"
     t.string   "surname"
-    t.datetime "birthdate"
+    t.date     "birthdate"
     t.string   "nickname"
     t.string   "password"
     t.integer  "address_id"
