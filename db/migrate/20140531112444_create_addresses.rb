@@ -6,6 +6,7 @@ class CreateAddresses < ActiveRecord::Migration
       t.string :state
       t.string :nation
       t.string :zipcode
+      # t.references :customer, index: true
 
       t.timestamps
     end

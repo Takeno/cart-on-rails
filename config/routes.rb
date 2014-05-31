@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :customers
+
   get 'catalog', to: 'catalog#index'
   get 'catalog/:id', to: 'catalog#show', as: 'showProduct'
 

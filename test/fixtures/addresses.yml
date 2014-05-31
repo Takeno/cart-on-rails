@@ -5,11 +5,13 @@ one:
   city: MyString
   state: MyString
   nation: MyString
-  zipcode: MyString
+  zipcode: 1
+  customer_id: 
 
 two:
   street: MyString
   city: MyString
   state: MyString
   nation: MyString
-  zipcode: MyString
+  zipcode: 1
+  customer_id: 
