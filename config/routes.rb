@@ -8,6 +8,11 @@ Rails.application.routes.draw do
   post 'check-login', to: 'application#checkLogin', as: 'checkLogin'
   root :to => "application#index"
 
+
+  get 'cart/add-item/:id', to: 'cart#addItem'
+  get 'cart/remove-item/:id', to: 'cart#removeItem'
+  get 'cart/empty', to: 'cart#empty'
+
   namespace :administration do
     resources :products
     resources :customers

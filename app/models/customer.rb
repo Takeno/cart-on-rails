@@ -1,5 +1,6 @@
 class Customer < ActiveRecord::Base
   belongs_to :address
+  has_many :cartItems
 
   accepts_nested_attributes_for :address, allow_destroy: true
 
