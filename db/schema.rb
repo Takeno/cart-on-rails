@@ -11,20 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140531152524) do
+ActiveRecord::Schema.define(version: 20140614112736) do
 
   create_table "addresses", force: true do |t|
     t.string   "street"
     t.string   "city"
     t.string   "state"
     t.string   "nation"
-    t.integer  "zipcode"
-    t.integer  "customer_id"
+    t.string   "zipcode"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  add_index "addresses", ["customer_id"], name: "index_addresses_on_customer_id"
 
   create_table "cart_items", force: true do |t|
     t.integer  "quantity"
@@ -40,7 +37,7 @@ ActiveRecord::Schema.define(version: 20140531152524) do
   create_table "customers", force: true do |t|
     t.string   "name"
     t.string   "surname"
-    t.datetime "birthdate"
+    t.date     "birthdate"
     t.string   "nickname"
     t.string   "password"
     t.integer  "address_id"
@@ -49,6 +46,22 @@ ActiveRecord::Schema.define(version: 20140531152524) do
   end
 
   add_index "customers", ["address_id"], name: "index_customers_on_address_id"
+
+  create_table "order_lines", force: true do |t|
+    t.integer  "quantity"
+    t.float    "unitPrice"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "order_id"
+  end
+
+  add_index "order_lines", ["order_id"], name: "index_order_Lines_on_order_id"
+
+  create_table "orders", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "evaded"
+  end
 
   create_table "products", force: true do |t|
     t.string   "name"

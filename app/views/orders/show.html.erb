@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<table>
+	<thead>
+		<tr>
+			<th>Data Creazione</th>
+			<th>Data Evasione</th>
+			<th colspan="2"></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td> <%= @order.created_at.to_formatted_s(:short) %> </td>
+			<td> <% if order.evaded %><%= order.updated_at.to_formatted_s(:short) %><% else %> Non Evaso <% end %></td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>
