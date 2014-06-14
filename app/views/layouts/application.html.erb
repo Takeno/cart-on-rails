@@ -12,24 +12,6 @@
 </head>
 <body>
 
-<% if @_current_user %>
-   <p class="text-right"> Ciao <%= @_current_user.nickname %>.</p>
-
-   <p> Cosa vuoi fare?
-    <ul>
-        <li><%= link_to 'Mostra carrello', cart_path %></li>
-        <li><%= link_to 'Guarda i prodotti', catalog_path %></li>
-        <li><%= link_to 'Guarda i tuoi ordini', orders_path %></li>
-        <li><%= link_to 'Logout', logout_path %></li>
-    </ul><p>
-
-<% else %>
-    <p class="text-right">Ciao Anonimo.</p>
-
-    <p> <%= link_to 'Effettua il login!', login_path %></p>
-
-<% end %>
-
 <%= yield %>
 
 </body>
