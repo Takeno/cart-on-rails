@@ -11,6 +11,10 @@
  * file per style scope.
  *
  *= require_tree .
- *= require_self
- *= require bootstrap.min 
-*/
+ */
+
+
+.login-block {
+    width: 40%;
+    min-width: 300px;
+}

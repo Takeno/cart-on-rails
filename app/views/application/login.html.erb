@@ -41,8 +41,8 @@
 
 <div class="container">
 
-<p id="alert"><%= alert %></p>
-
+<p id="alert" class="alert alert-danger"><%= alert %></p>
+<div class="login-block center-block">
 <%= form_tag checkLogin_path do %>
 	<div class="form-group">
 	 	 <%= label_tag :nickname %><br />
@@ -54,7 +54,7 @@
   </div>
   <%= submit_tag "Log in", class: 'btn btn-default' %>
 <% end %>
-
+</div>
 </div>
 </body>
 </html>
