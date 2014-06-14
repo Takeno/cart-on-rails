@@ -71,7 +71,11 @@
         <td><%= product.description %></td>
         <td><%= product.price %></td>
         <td><%= product.quantity %></td>
-        <td><%= link_to 'Show', showProduct_path(product)%></td>
+        <td>
+          <%= link_to showProduct_path(product), class: 'btn btn-default' do %>
+          <span class="glyphicon glyphicon-search"></span> Show
+          <% end %>
+        </td>
       </tr>
     <% end %>
   </tbody>
