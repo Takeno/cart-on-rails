@@ -12,7 +12,7 @@
     </tr>
     <tr>
         <th class="text-right">Price:</th>
-        <td><%= @product.price %></td>
+        <td><%= number_to_currency(@product.price) %></td>
     </tr>
     <tr>
         <th class="text-right">Quantity:</th>

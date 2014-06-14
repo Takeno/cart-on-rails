@@ -1,8 +1,7 @@
 <%= form_for([:administration, @provider]) do |f| %>
   <% if @provider.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@provider.errors.count, "error") %> prohibited this provider from being saved:</h2>
-
+    <div class="alert alert-danger">
+      <h4><%= pluralize(@provider.errors.count, "error") %> prohibited this provider from being saved:</h4>
       <ul>
       <% @provider.errors.full_messages.each do |message| %>
         <li><%= message %></li>
