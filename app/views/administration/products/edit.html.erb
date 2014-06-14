@@ -1,6 +1,11 @@
 <h1>Editing product</h1>
 
 <%= render 'form' %>
+<br />
+<%= link_to [:administration, @product], class: 'btn btn-info' do %>
+<span class="glyphicon glyphicon-arrow-left"></span> Back to product
+<% end %>
 
-<%= link_to 'Show', [:administration, @product] %> |
-<%= link_to 'Back', administration_products_path %>
+<%= link_to administration_products_path, class: 'btn btn-info' do %>
+<span class="glyphicon glyphicon-arrow-left"></span> Back to the list
+<% end %>

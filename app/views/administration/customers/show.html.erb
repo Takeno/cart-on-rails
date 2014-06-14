@@ -1,38 +1,46 @@
-<p id="notice"><%= notice %></p>
+<h1>Customer detail</h1>
 
-<p>
-  <strong>Name:</strong>
-  <%= @customer.name %>
-</p>
+<table class="table table-striped">
+  <tr>
+    <th class="text-right" width="30%">Name:</th>
+    <td><%= @customer.name %></td>
+  </tr>
 
-<p>
-  <strong>Surname:</strong>
-  <%= @customer.surname %>
-</p>
+  <tr>
+    <th class="text-right">Surname:</th>
+    <td><%= @customer.surname %></td>
+  </tr>
 
-<p>
-  <strong>Birthdate:</strong>
-  <%= @customer.birthdate %>
-</p>
+  <tr>
+    <th class="text-right">Birthdate:</th>
+    <td><%= @customer.birthdate %></td>
+  </tr>
 
-<p>
-  <strong>Nickname:</strong>
-  <%= @customer.nickname %>
-</p>
+  <tr>
+    <th class="text-right">Nickname:</th>
+    <td><%= @customer.nickname %></td>
+  </tr>
 
-<p>
-  <strong>Password:</strong>
-  <%= @customer.password %>
-</p>
+  <tr>
+    <th class="text-right">Password:</th>
+    <td><%= @customer.password %></td>
+  </tr>
 
-<p>
-  <strong>Address:</strong>
-  <%= @customer.address.street %>, 
-  <%= @customer.address.zipcode %>,
-  <%= @customer.address.city %>,
-  <%= @customer.address.state %>,
-  <%= @customer.address.nation %>
-</p>
+  <tr>
+    <th class="text-right">Address:</th>
+    <td><%= @customer.address.street %>, 
+    <%= @customer.address.zipcode %>,
+    <%= @customer.address.city %>,
+    <%= @customer.address.state %>,
+    <%= @customer.address.nation %></td>
+  </tr>
+</table>
 
-<%= link_to 'Edit', edit_administration_customer_path(@customer) %> |
-<%= link_to 'Back', administration_customers_path %>
+
+<%= link_to administration_customers_path, class: 'btn btn-info' do %>
+<span class="glyphicon glyphicon-arrow-left"></span> Back to the list
+<% end %>
+
+<%= link_to edit_administration_customer_path(@customer), class: 'btn btn-default' do %>
+<span class="glyphicon glyphicon-pencil"></span> Edit
+<% end %>

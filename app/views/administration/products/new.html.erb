@@ -1,5 +1,7 @@
 <h1>New product</h1>
 
 <%= render 'form' %>
-
-<%= link_to 'Back', administration_products_path %>
+<br />
+<%= link_to administration_products_path, class: 'btn btn-info' do %>
+<span class="glyphicon glyphicon-arrow-left"></span> Back to the list
+<% end %>
