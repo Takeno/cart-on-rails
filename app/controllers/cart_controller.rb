@@ -67,35 +67,50 @@ class CartController < ApplicationController
 
   def checkout
     cartItems = CartItem.includes([:product]).where(:customer => @_current_user)
-    # order = Order.new(:customer => @_current_user)
+    order = Order.new(:customer => @_current_user, :evaded => false)
 
-    success = true
+    # CartItem.transaction do
+      #   cartItems.each do |item|
+      #     if item.quantity > item.product.quantity
+      #       success = false
+      #       raise ActiveRecord::Rollback
+      #     end
+
+      #     item.product.quantity -= item.quantity
+      #     # Creo la riga d'ordine
+      #     row = OrderLine.new(
+      #       :order => order,
+      #       :quantity => item.quantity,
+      #       :unitPrice => item.product.price,
+      #       :product => item.product)
+
+      #     # Salvo tutte le entity
+      #     item.product.save!
+      #     row.save!
+      #     item.destroy!
+    #   end
 
     CartItem.transaction do
       cartItems.each do |item|
-        if item.quantity > item.product.quantity
-          success = false
-          raise ActiveRecord::Rollback
-        end
 
-        item.product.quantity -= item.quantity
         # Creo la riga d'ordine
-        # row = RowOrder.new(:order => order, :quantity => item.quantity, :price => item.product.price)
+        row = OrderLine.new(
+          :order => order,
+          :quantity => item.quantity,
+          :unitPrice => item.product.price,
+          :product => item.product
+        )
 
-        # Salvo tutte le entity
-        item.product.save!
-        # row.save!
+        # Salvo la nuova riga d'ordine
+        row.save!
+        # Distruggo l'oggetto dal carrello
         item.destroy!
       end
 
-      #order.save!
+      order.save!
     end
 
-    if success
-      redirect_to :cart, notice: 'Order created'
-    else
-      redirect_to :cart, alert: 'Cannot create order due lack of items'
-    end
+    redirect_to :cart, notice: 'Order created'
   end
 
 

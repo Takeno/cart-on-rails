@@ -12,9 +12,9 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td> <%= order.customer.name %> <%= order.customer.surname %> </td>
-			<td> <%= order.created_at.to_formatted_s(:short) %> </td>
-			<td> <% if order.evaded %><%= order.updated_at.to_formatted_s(:short) %><% else %> Non Evaso <% end %></td>
+			<td><%= @order.customer.name %> <%= @order.customer.surname %></td>
+			<td><%= @order.created_at.to_formatted_s(:short) %></td>
+			<td><% if @order.evaded %><%= @order.updated_at.to_formatted_s(:short) %><% else %> Non Evaso <% end %></td>
 		</tr>
 	</tbody>
 </table>
@@ -34,7 +34,7 @@
     		<tr>
      	 		<td> <%= orderLine.product.name %></td>
      	 		<td> <%= orderLine.quantity %></td>
-     	 		<td> <%= orderLine.unitPrice %></td>
+     	 		<td> <%= number_to_currency(orderLine.unitPrice) %></td>
     		</tr>
    		<% end %>
 	</tbody>

@@ -33,4 +33,6 @@
   </tbody>
 </table>
 
+<% unless @cartItems.empty? %>
 <%= link_to 'Checkout', checkoutCart_path %>
+<% end %>
