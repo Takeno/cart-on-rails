@@ -1,5 +1,5 @@
 class Customer < ActiveRecord::Base
-  belongs_to :address
+  belongs_to :address, :dependent => :destroy
   has_many :cartItems
   has_many   :orders
 
