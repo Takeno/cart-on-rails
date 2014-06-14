@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CartOnRails Administration</title>
+</head>
+<body>
+
+<% if @admin %>
+    Ciao <%= @admin[:name] %>. Cosa vuoi fare?
+
+    <ul>
+        <li><%= link_to 'Guarda i prodotti', administration_products_path %></li>
+        <li><%= link_to 'Guarda i clienti', administration_customers_path %></li>
+        <li><%= link_to 'Guarda gli ordini', administration_orders_path %></li>
+        <li><%= link_to 'Logout', administration_logout_path %></li>
+    </ul>
+
+<% else %>
+    Ciao Anonimo. <%= link_to 'Effettua il login!', administration_login_path %>
+
+<% end %>
+
+<%= yield %>
+
+</body>
+</html>
