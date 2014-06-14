@@ -44,15 +44,15 @@
 <p id="alert"><%= alert %></p>
 
 <%= form_tag checkLogin_path do %>
-	<p>
+	<div class="form-group">
 	 	 <%= label_tag :nickname %><br />
-   		 <%= text_field_tag :nickname, params[:nickname] %>
-  	</p>
-  <p>
+   		 <%= text_field_tag :nickname, params[:nickname], class: 'form-control' %>
+  	</div>
+  <div class="form-group">
     <%= label_tag :password %><br />
-    <%= password_field_tag :password %>
-  </p>
-  <p class="button"><%= submit_tag "Log in" %></p>
+    <%= password_field_tag :password, class: 'form-control' %>
+  </div>
+  <%= submit_tag "Log in", class: 'btn btn-default' %>
 <% end %>
 
 </div>
