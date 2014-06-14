@@ -53,8 +53,14 @@ class CartController < ApplicationController
   end
 
   def empty
-    CartItem.delete_all(['customer_id = ?', @_current_user.id])
-    render nothing: true
+    respond_to do |format|
+      if CartItem.delete_all(['customer_id = ?', @_current_user.id])
+        format.html { redirect_to :cart, notice: 'All items are removed.' }
+      else
+        format.html { redirect_to :cart, error: 'Cannot remove all items from cart.' }
+        format.json { render json: cartItem.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
 

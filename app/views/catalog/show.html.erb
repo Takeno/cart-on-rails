@@ -20,4 +20,7 @@
   <%= @product.quantity %>
 </p>
 
+<%= link_to 'Add product to cart', addItemToCart_path(@product) %>
+
+
 <%= link_to 'Back', catalog_path %>
