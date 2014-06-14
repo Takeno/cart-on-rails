@@ -17,7 +17,7 @@ class CartController < ApplicationController
       if @cartItem.save!
         format.html { redirect_to :cart, notice: 'Item successfully added.' }
       else
-        format.html { redirect_to :cart, error: 'Cannot add item to cart.' }
+        format.html { redirect_to :cart, alert: 'Cannot add item to cart.' }
         format.json { render json: cartItem.errors, status: :unprocessable_entity }
       end
     end
@@ -35,7 +35,7 @@ class CartController < ApplicationController
       if @cartItem.save!
         format.html { redirect_to :cart, notice: 'Item successfully subtracted.' }
       else
-        format.html { redirect_to :cart, error: 'Cannot subtract item to cart.' }
+        format.html { redirect_to :cart, alert: 'Cannot subtract item to cart.' }
         format.json { render json: cartItem.errors, status: :unprocessable_entity }
       end
     end
@@ -46,7 +46,7 @@ class CartController < ApplicationController
       if @cartItem.destroy
         format.html { redirect_to :cart, notice: 'Item successfully removed from cart.' }
       else
-        format.html { redirect_to :cart, error: 'Cannot remove item from cart.' }
+        format.html { redirect_to :cart, alert: 'Cannot remove item from cart.' }
         format.json { render json: @cartItem.errors, status: :unprocessable_entity }
       end
     end
@@ -57,9 +57,44 @@ class CartController < ApplicationController
       if CartItem.delete_all(['customer_id = ?', @_current_user.id])
         format.html { redirect_to :cart, notice: 'All items are removed.' }
       else
-        format.html { redirect_to :cart, error: 'Cannot remove all items from cart.' }
+        format.html { redirect_to :cart, alert: 'Cannot remove all items from cart.' }
         format.json { render json: cartItem.errors, status: :unprocessable_entity }
       end
+    end
+  end
+
+
+
+  def checkout
+    cartItems = CartItem.includes([:product]).where(:customer => @_current_user)
+    # order = Order.new(:customer => @_current_user)
+
+    success = true
+
+    CartItem.transaction do
+      cartItems.each do |item|
+        if item.quantity > item.product.quantity
+          success = false
+          raise ActiveRecord::Rollback
+        end
+
+        item.product.quantity -= item.quantity
+        # Creo la riga d'ordine
+        # row = RowOrder.new(:order => order, :quantity => item.quantity, :price => item.product.price)
+
+        # Salvo tutte le entity
+        item.product.save!
+        # row.save!
+        item.destroy!
+      end
+
+      #order.save!
+    end
+
+    if success
+      redirect_to :cart, notice: 'Order created'
+    else
+      redirect_to :cart, alert: 'Cannot create order due lack of items'
     end
   end
 
@@ -79,7 +114,7 @@ class CartController < ApplicationController
       product = Product.find(params[:id])
       
       if product === nil
-        redirect_to :cart, error: 'That product doesn\'t exist'
+        redirect_to :cart, alert: 'That product doesn\'t exist'
       end
 
       # Cerco il cartItem nel database

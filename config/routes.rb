@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get 'cart/sub-item/:id', to: 'cart#subtractItem', as: 'subItemToCart'
   get 'cart/remove-item/:id', to: 'cart#removeItem', as: 'removeItemFromCart'
   get 'cart/empty', to: 'cart#empty', as: 'emptyCart'
+  get 'cart/checkout', to: 'cart#checkout', as: 'checkoutCart'
 
   namespace :administration do
     resources :products
