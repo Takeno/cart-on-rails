@@ -49,11 +49,11 @@
     </nav>
 
 
-
+<div class="container">
 <p id="notice"><%= notice %></p>
 
 <div>
-<table>
+<table class="table">
 	<thead>
 		<tr>
 			<th>Cliente</th>
@@ -72,8 +72,10 @@
 </table>
 </div>
 
+<br /><br />
+
 <div>
-<table>
+<table class="table">
 	<thead>
 		<tr>
 			<th>Prodotto</th>
@@ -94,5 +96,9 @@
 </div>
 
 
-<%= link_to 'Edit', edit_order_path(@order) %> |
-<%= link_to 'Back', orders_path %>
+<%= link_to orders_path, class: 'btn btn-default' do%>
+<span class="glyphicon glyphicon-arrow-left"></span>Back
+<% end %>
+</div>
+</body>
+</html>

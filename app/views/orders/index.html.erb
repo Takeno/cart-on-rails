@@ -69,7 +69,10 @@
         <td><%= order.created_at.to_formatted_s(:short) %></td>
         <td> <% if order.evaded %><%= order.updated_at.to_formatted_s(:short) %><% else %> Non Evaso <% end %></td>
         <td><%= link_to 'Show', order, class: "btn btn-default"%></td>
-        <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to order, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' do %>
+          <span class="glyphicon glyphicon-remove"></span> Destroy
+          <% end %>
+        </td>
       </tr>
     <% end %>
   </tbody>
