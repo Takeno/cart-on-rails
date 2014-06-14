@@ -4,6 +4,7 @@ class CreateOrderLines < ActiveRecord::Migration
       t.integer :quantity
       t.float :unitPrice
 
+
       t.timestamps
     end
   end

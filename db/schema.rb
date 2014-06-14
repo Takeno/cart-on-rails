@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140614120550) do
+ActiveRecord::Schema.define(version: 20140614124019) do
 
   create_table "addresses", force: true do |t|
     t.string   "street"
@@ -56,13 +56,13 @@ ActiveRecord::Schema.define(version: 20140614120550) do
     t.integer  "product_id"
   end
 
-  add_index "order_lines", ["order_id"], name: "index_order_Lines_on_order_id"
-  add_index "order_lines", ["product_id"], name: "index_order_Lines_on_product_id"
+  add_index "order_lines", ["order_id"], name: "index_order_lines_on_order_id"
+  add_index "order_lines", ["product_id"], name: "index_order_lines_on_product_id"
 
   create_table "orders", force: true do |t|
+    t.boolean  "evaded"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "evaded"
     t.integer  "customer_id"
   end
 
