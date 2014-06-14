@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :orders
 
   get 'catalog', to: 'catalog#index', as: 'catalog'
   get 'catalog/:id', to: 'catalog#show', as: 'showProduct'
