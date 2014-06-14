@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get 'login', to: 'application#login', as: 'login'
   get 'logout', to: 'application#logout', as: 'logout'
   post 'check-login', to: 'application#checkLogin', as: 'checkLogin'
-  root :to => "application#index"
+  root 'catalog#index'
 
 
 
@@ -18,13 +18,23 @@ Rails.application.routes.draw do
   get 'cart/empty', to: 'cart#empty', as: 'emptyCart'
   get 'cart/checkout', to: 'cart#checkout', as: 'checkoutCart'
 
+
+
+  get 'administration', to: 'administration#index', as: 'administration'
+  get 'administration/login', to: 'administration#login', as: 'administration_login'
+  post 'administration/check-login', to: 'administration#checkLogin', as: 'administration_checkLogin'
+  get 'administration/logout', to: 'administration#logout', as: 'administration_logout'
+
   namespace :administration do
     resources :products
     resources :customers
     resources :providers
-  end
+    
+    get 'orders', to: 'orders#index', as: 'orders'
+    get 'orders/:id/show', to: 'orders#show', as: 'order'
+    get 'orders/:id/mark-as-evaded', to: 'orders#evade', as: 'evade_order'
 
-  resources :administration
+  end
 
   # resources :administration
   # get 'administration/index'

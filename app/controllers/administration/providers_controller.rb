@@ -1,4 +1,5 @@
 class Administration::ProvidersController < AdministrationController
+  before_filter :confirm_logged_in
   before_action :set_provider, only: [:show, :edit, :update, :destroy]
 
   # GET /providers

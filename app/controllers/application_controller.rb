@@ -30,8 +30,7 @@ class ApplicationController < ActionController::Base
   protected
     def confirm_logged_in
       unless session[:current_user_id]
-          flash[:alert] = "Please log in"
-          redirect_to login_path
+          redirect_to login_path, :alert => "Please log in"
           return false
       else
           return true
