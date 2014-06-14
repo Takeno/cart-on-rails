@@ -69,27 +69,6 @@ class CartController < ApplicationController
     cartItems = CartItem.includes([:product]).where(:customer => @_current_user)
     order = Order.new(:customer => @_current_user, :evaded => false)
 
-    # CartItem.transaction do
-      #   cartItems.each do |item|
-      #     if item.quantity > item.product.quantity
-      #       success = false
-      #       raise ActiveRecord::Rollback
-      #     end
-
-      #     item.product.quantity -= item.quantity
-      #     # Creo la riga d'ordine
-      #     row = OrderLine.new(
-      #       :order => order,
-      #       :quantity => item.quantity,
-      #       :unitPrice => item.product.price,
-      #       :product => item.product)
-
-      #     # Salvo tutte le entity
-      #     item.product.save!
-      #     row.save!
-      #     item.destroy!
-    #   end
-
     CartItem.transaction do
       cartItems.each do |item|
 
