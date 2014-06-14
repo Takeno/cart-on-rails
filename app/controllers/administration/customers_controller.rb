@@ -1,4 +1,5 @@
 class Administration::CustomersController < AdministrationController
+  before_filter :confirm_logged_in
   before_action :set_customer, only: [:show, :edit, :update, :destroy]
 
   # GET /customers
