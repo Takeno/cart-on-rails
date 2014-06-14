@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
 
-  get 'catalog', to: 'catalog#index'
+  get 'catalog', to: 'catalog#index', as: 'catalog'
   get 'catalog/:id', to: 'catalog#show', as: 'showProduct'
   get 'login', to: 'application#login', as: 'login'
   get 'logout', to: 'application#logout', as: 'logout'
@@ -9,9 +9,12 @@ Rails.application.routes.draw do
   root :to => "application#index"
 
 
-  get 'cart/add-item/:id', to: 'cart#addItem'
-  get 'cart/remove-item/:id', to: 'cart#removeItem'
-  get 'cart/empty', to: 'cart#empty'
+
+  get 'cart', to: 'cart#index', as: 'cart'
+  get 'cart/add-item/:id', to: 'cart#addItem', as: 'addItemToCart'
+  get 'cart/sub-item/:id', to: 'cart#subtractItem', as: 'subItemToCart'
+  get 'cart/remove-item/:id', to: 'cart#removeItem', as: 'removeItemFromCart'
+  get 'cart/empty', to: 'cart#empty', as: 'emptyCart'
 
   namespace :administration do
     resources :products

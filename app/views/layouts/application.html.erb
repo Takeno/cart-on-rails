@@ -8,6 +8,19 @@
 </head>
 <body>
 
+<% if @_current_user %>
+    Ciao <%= @_current_user.nickname %>. Cosa vuoi fare?
+
+    <ul>
+        <li><%= link_to 'Mostra carrello', cart_path %></li>
+        <li><%= link_to 'Guarda i prodotti', catalog_path %></li>
+    </ul>
+
+<% else %>
+    Ciao Anonimo. <%= link_to 'Effettua il login!', login_path %>
+
+<% end %>
+
 <%= yield %>
 
 </body>
