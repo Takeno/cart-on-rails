@@ -1,3 +1,45 @@
+<html lang="it">
+<head>
+  <title>CartOnRails</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <!-- Bootstrap -->
+  <%= stylesheet_link_tag "bootstrap", :media => "all" %>
+  <%= stylesheet_link_tag "bootstrap-responsive", :media => "all" %>
+  <!-- -->
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class"navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" hred="#"> 
+        CartOnRails
+      </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><%= link_to 'Catalogo', catalog_path %></li>
+        <% if @_current_user %> 
+        <li><%= link_to 'Carrello', cart_path %></li>
+        <li><%= link_to 'Ordini', orders_path %></li>
+        <li><%= link_to 'Logout', logout_path %></li>
+        <% else %>
+        <li><%= link_to 'Login', login_path %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
 <h1>Listing products</h1>
 
 <table>
@@ -25,3 +67,5 @@
 </table>
 
 <br>
+</body>
+</html>
