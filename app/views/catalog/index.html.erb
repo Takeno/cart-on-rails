@@ -76,6 +76,13 @@
           <span class="glyphicon glyphicon-search"></span> Show
           <% end %>
         </td>
+        <%if @_current_user %>
+        <td>
+          <%= link_to addItemToCart_path(product), class: 'btn btn-success' do%>
+          <span class="glyphicon glyphicon-ok-circle"></span> Add to cart
+          <% end %>
+        </td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
