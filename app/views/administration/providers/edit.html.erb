@@ -1,6 +1,11 @@
 <h1>Editing provider</h1>
 
 <%= render 'form' %>
+<br />
+<%= link_to [:administration, @provider], class: 'btn btn-info' do %>
+<span class="glyphicon glyphicon-arrow-left"></span> Back to provider
+<% end %>
 
-<%= link_to 'Show', [:administration, @provider] %> |
-<%= link_to 'Back', administration_providers_path %>
+<%= link_to administration_providers_path, class: 'btn btn-info' do %>
+<span class="glyphicon glyphicon-arrow-left"></span> Back to the list
+<% end %>

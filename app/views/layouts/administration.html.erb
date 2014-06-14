@@ -36,6 +36,7 @@
                     <% unless @admin %>
                     <li><%= link_to 'Login', administration_login_path %></li>
                     <% else %>
+                    <li><%= link_to 'Guarda i fornitori', administration_providers_path %></li>
                     <li><%= link_to 'Guarda i prodotti', administration_products_path %></li>
                     <li><%= link_to 'Guarda i clienti', administration_customers_path %></li>
                     <li><%= link_to 'Guarda gli ordini', administration_orders_path %></li>
