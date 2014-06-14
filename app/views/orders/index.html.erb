@@ -50,10 +50,11 @@
 
 
 
+<div class="container">
 
 <h1>Listing orders</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Data Creazione</th>
@@ -67,8 +68,7 @@
       <tr>
         <td><%= order.created_at.to_formatted_s(:short) %></td>
         <td> <% if order.evaded %><%= order.updated_at.to_formatted_s(:short) %><% else %> Non Evaso <% end %></td>
-        <td><%= link_to 'Show', order %></td>
-        <td><%= link_to 'Edit', edit_order_path(order) %></td>
+        <td><%= link_to 'Show', order, class: "btn btn-default"%></td>
         <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
@@ -76,4 +76,6 @@
 </table>
 
 <br>
-
+</div>
+</body>
+</html>
