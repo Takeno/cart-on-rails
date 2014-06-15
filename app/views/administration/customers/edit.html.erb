@@ -1,6 +1,11 @@
 <h1>Editing customer</h1>
 
 <%= render 'form' %>
+<br />
+<%= link_to [:administration, @customer], class: 'btn btn-info' do %>
+<span class="glyphicon glyphicon-arrow-left"></span> Back to customer
+<% end %>
 
-<%= link_to 'Show', [:administration, @customer] %> |
-<%= link_to 'Back', administration_customers_path %>
+<%= link_to administration_customers_path, class: 'btn btn-info' do %>
+<span class="glyphicon glyphicon-arrow-left"></span> Back to the list
+<% end %>

@@ -1,24 +1,29 @@
-<p id="notice"><%= notice %></p>
+<h1>Product details</h1>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+<table class="table table-striped">
+    <tr>
+        <th class="text-right" width="30%">Name:</th>
+        <td><%= @product.name %></td>
+    </tr>
+    <tr>
+        <th class="text-right">Description:</th>
+        <td><%= @product.description %></td>
+    </tr>
+    <tr>
+        <th class="text-right">Price:</th>
+        <td><%= number_to_currency(@product.price) %></td>
+    </tr>
+    <tr>
+        <th class="text-right">Quantity:</th>
+        <td><%= @product.quantity %></td>
+    </tr>
+</table>
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
+<%= link_to administration_products_path, class: 'btn btn-info' do %>
+<span class="glyphicon glyphicon-arrow-left"></span> Back to the list
+<% end %>
 
-<p>
-  <strong>Quantity:</strong>
-  <%= @product.quantity %>
-</p>
-
-<%= link_to 'Edit', edit_administration_product_path(@product) %> |
-<%= link_to 'Back', administration_products_path %>
+<%= link_to edit_administration_product_path(@product), class: 'btn btn-default' do %>
+<span class="glyphicon glyphicon-pencil"></span> Edit
+<% end %>

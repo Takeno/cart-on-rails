@@ -1,23 +1,33 @@
-<p id="notice"><%= notice %></p>
+<h1>Provider details</h1>
 
-<p>
-  <strong>Name:</strong>
-  <%= @provider.name %>
-</p>
+<table class="table table-striped">
+  <tr>
+    <th class="text-right" width="30%">Name:</th>
+    <td><%= @provider.name %></td>
+  </tr>
 
-<p>
-  <strong>Vat:</strong>
-  <%= @provider.vat %>
-</p>
+  <tr>
+    <th class="text-right">Vat:</th>
+    <td><%= @provider.vat %></td>
+  </tr>
 
-<p>
-  <strong>Address:</strong>
-  <%= @provider.address.street %>, 
-  <%= @provider.address.zipcode %>,
-  <%= @provider.address.city %>,
-  <%= @provider.address.state %>,
-  <%= @provider.address.nation %>
-</p>
+  <tr>
+    <th class="text-right">Address:</th>
+    <td>
+      <%= @provider.address.street %>,
+      <%= @provider.address.zipcode %>,
+      <%= @provider.address.city %>,
+      <%= @provider.address.state %>,
+      <%= @provider.address.nation %>
+    </td>
+  </tr>
+</table>
 
-<%= link_to 'Edit', edit_administration_provider_path(@provider) %> |
-<%= link_to 'Back', administration_providers_path %>
+
+<%= link_to administration_providers_path, class: 'btn btn-info' do %>
+<span class="glyphicon glyphicon-arrow-left"></span> Back to the list
+<% end %>
+
+<%= link_to edit_administration_provider_path(@provider), class: 'btn btn-default' do %>
+<span class="glyphicon glyphicon-pencil"></span> Edit
+<% end %>

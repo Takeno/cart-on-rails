@@ -3,6 +3,12 @@ class Customer < ActiveRecord::Base
   has_many :cartItems
   has_many   :orders
 
+  validates :name,  presence: true
+  validates :surname,  presence: true
+  validates :birthdate,  presence: true
+  validates :nickname,  presence: true
+  validates :password,  presence: true
+
   accepts_nested_attributes_for :address, allow_destroy: true
 
   def self.authenticate(nickname, password)

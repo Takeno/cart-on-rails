@@ -1,6 +1,6 @@
 <h1>Listing customers</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Name</th>
@@ -9,7 +9,7 @@
       <th>Nickname</th>
       <th>Password</th>
       <th>Address</th>
-      <th colspan="3"></th>
+      <th></th>
     </tr>
   </thead>
 
@@ -28,9 +28,19 @@
           <%= customer.address.state %>,
           <%= customer.address.nation %>
         </td>
-        <td><%= link_to 'Show', [:administration, customer] %></td>
-        <td><%= link_to 'Edit', edit_administration_customer_path(customer) %></td>
-        <td><%= link_to 'Destroy', [:administration, customer], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>
+          <%= link_to [:administration, customer], class: 'btn btn-default' do %>
+          <span class="glyphicon glyphicon-search"></span> Show
+          <% end %>
+
+          <%= link_to edit_administration_customer_path(customer), class: 'btn btn-default' do %>
+          <span class="glyphicon glyphicon-pencil"></span> Edit
+          <% end %>
+
+          <%= link_to [:administration, customer], method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' do %>
+          <span class="glyphicon glyphicon-remove"></span> Destroy
+          <% end %>
+        </td>
       </tr>
     <% end %>
   </tbody>
@@ -38,4 +48,4 @@
 
 <br>
 
-<%= link_to 'New Customer', new_administration_customer_path %>
+<%= link_to 'New Customer', new_administration_customer_path, class: 'btn btn-info' %>

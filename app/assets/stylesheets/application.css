@@ -13,6 +13,7 @@
  *= require_tree .
  */
 
+body { padding-top: 70px; }
 
 .login-block {
     width: 40%;

@@ -1,8 +1,7 @@
 <%= form_for([:administration, @provider]) do |f| %>
   <% if @provider.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@provider.errors.count, "error") %> prohibited this provider from being saved:</h2>
-
+    <div class="alert alert-danger">
+      <h4><%= pluralize(@provider.errors.count, "error") %> prohibited this provider from being saved:</h4>
       <ul>
       <% @provider.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -11,38 +10,38 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: 'form-control' %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :vat %><br>
-    <%= f.text_field :vat %>
+    <%= f.text_field :vat, class: 'form-control' %>
     
   </div>
       <%= f.fields_for :address do |a| %>
-        <div class="field">
+        <div class="form-group">
             <%= a.label :street %><br>
-            <%= a.text_field :street %>
+            <%= a.text_field :street, class: 'form-control' %>
         </div>
-        <div class="field">
+        <div class="form-group">
             <%= a.label :city %><br>
-            <%= a.text_field :city %>
+            <%= a.text_field :city, class: 'form-control' %>
         </div>
-        <div class="field">
+        <div class="form-group">
             <%= a.label :state %><br>
-            <%= a.text_field :state %>
+            <%= a.text_field :state, class: 'form-control' %>
         </div>
-        <div class="field">
+        <div class="form-group">
             <%= a.label :nation %><br>
-            <%= a.text_field :nation %>
+            <%= a.text_field :nation, class: 'form-control' %>
         </div>
-        <div class="field">
+        <div class="form-group">
             <%= a.label :zipcode %><br>
-            <%= a.text_field :zipcode %>
+            <%= a.text_field :zipcode, class: 'form-control' %>
         </div>
     <% end %>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Save', class: 'btn btn-success' %>
   </div>
 <% end %>

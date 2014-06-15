@@ -1,47 +1,58 @@
-<p id="notice"><%= notice %></p>
+<h1>Order details</h1>
 
-<div>
-<table>
+<table class="table">
 	<thead>
 		<tr>
 			<th>Cliente</th>
 			<th>Data Creazione</th>
 			<th>Data Evasione</th>
-			<th colspan="3"></th>
+			<th></th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td><%= @order.customer.name %> <%= @order.customer.surname %></td>
+			<td>
+				<%= @order.customer.name %> <%= @order.customer.surname %><br />
+				<%= @order.customer.address.street %>, 
+				<%= @order.customer.address.zipcode %>,
+				<%= @order.customer.address.city %>,
+				<%= @order.customer.address.state %>,
+				<%= @order.customer.address.nation %>
+			</td>
 			<td><%= @order.created_at.to_formatted_s(:short) %></td>
-			<td><% if @order.evaded %><%= @order.updated_at.to_formatted_s(:short) %><% else %> Non Evaso <% end %></td>
+			<td>
+				<% if @order.evaded %>
+					<%= @order.updated_at.to_formatted_s(:short) %>
+				<% else %>
+					Non Evaso - <%= link_to 'Evade', administration_evade_order_path(@order) %>
+				<% end %>
+			</td>
 		</tr>
 	</tbody>
 </table>
-</div>
 
-<div>
-<table>
+<h3>Articles</h3>
+<table class="table table-striped">
 	<thead>
 		<tr>
 			<th>Prodotto</th>
 			<th>Quantità</th>
 			<th>Prezzo Unitario</th>
+			<th>Totale</th>
 		</tr>
 	</thead>
 	<tbody>
 	    <% @order.orderLines.each do |orderLine| %>
     		<tr>
-     	 		<td> <%= orderLine.product.name %></td>
-     	 		<td> <%= orderLine.quantity %></td>
-     	 		<td> <%= number_to_currency(orderLine.unitPrice) %></td>
+     	 		<td><%= orderLine.product.name %></td>
+     	 		<td><%= orderLine.quantity %></td>
+     	 		<td><%= number_to_currency(orderLine.unitPrice) %></td>
+     	 		<td><%= number_to_currency(orderLine.unitPrice * orderLine.quantity) %></td>
     		</tr>
    		<% end %>
 	</tbody>
 </table>
-</div>
 
-<% unless @order.evaded %>
-<%= link_to 'Evade', administration_evade_order_path(@order) %>
+<%= link_to administration_orders_path, class: 'btn btn-info' do %>
+<span class="glyphicon glyphicon-arrow-left"></span> Back to the list
 <% end %>
-<%= link_to 'Back', administration_orders_path %>

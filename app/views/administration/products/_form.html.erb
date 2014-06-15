@@ -1,8 +1,7 @@
 <%= form_for([:administration, @product]) do |f| %>
   <% if @product.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
-
+    <div class="alert alert-danger">
+      <h4><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h4>
       <ul>
       <% @product.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -11,23 +10,23 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: 'form-control' %>
   </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_field :description %>
+  <div class="form-group">
+    <%= f.label :description %>
+    <%= f.text_field :description, class: 'form-control' %>
   </div>
-  <div class="field">
-    <%= f.label :price %><br>
-    <%= f.text_field :price %>
+  <div class="form-group">
+    <%= f.label :price %>
+    <%= f.text_field :price, class: 'form-control' %>
   </div>
-  <div class="field">
-    <%= f.label :quantity %><br>
-    <%= f.number_field :quantity %>
+  <div class="form-group">
+    <%= f.label :quantity %>
+    <%= f.number_field :quantity, class: 'form-control' %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Save', class: 'btn btn-success' %>
   </div>
 <% end %>
