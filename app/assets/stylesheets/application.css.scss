@@ -13,7 +13,14 @@
  *= require_tree .
  */
 
-body { padding-top: 70px; }
+html, body {
+    min-height: 98%;
+}
+
+body {
+    padding-top: 70px;
+    background: image-url('CoR.png') no-repeat right bottom;
+}
 
 .login-block {
     width: 40%;
