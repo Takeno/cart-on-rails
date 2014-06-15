@@ -7,7 +7,7 @@
       <th>Descrizione</th>
       <th>Prezzo</th>
       <th>Quantità</th>
-      <th colspan="4"></th>
+      <th></th>
     </tr>
   </thead>
 
@@ -20,13 +20,11 @@
         <td><%= product.quantity %></td>
         <td>
           <%= link_to showProduct_path(product), class: 'btn btn-default' do %>
-          <span class="glyphicon glyphicon-search"></span> Show
+            <span class="glyphicon glyphicon-search"></span> Show
           <% end %>
-        </td>
-        <%if @_current_user %>
-        <td>
-          <%= link_to addItemToCart_path(product), class: 'btn btn-success' do%>
-          <span class="glyphicon glyphicon-ok-circle"></span> Add to cart
+          <%if @_current_user %>
+            <%= link_to addItemToCart_path(product), class: 'btn btn-success' do%>
+            <span class="glyphicon glyphicon-ok-circle"></span> Add to cart
           <% end %>
         </td>
         <% end %>
@@ -34,4 +32,3 @@
     <% end %>
   </tbody>
 </table>
-<br>

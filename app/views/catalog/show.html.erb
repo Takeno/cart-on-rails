@@ -1,22 +1,20 @@
 <h2><%= @product.name %></h2>
 
 
-  <h5><strong>Description:</strong></h5>
-  <p><%= @product.description %></p>
+<h5><strong>Description:</strong></h5>
+<p><%= @product.description %></p>
 
-  <h5><strong>Price:</strong></h5>
-  <p><%= number_to_currency(@product.price) %></p>
-
-
-  <h5><strong>Quantity:</strong></h5>
-  <p><%= @product.quantity %></p>
+<p><strong>Price:</strong> <%= number_to_currency(@product.price) %></p>
 
 
- <%= link_to addItemToCart_path(@product), class: 'btn btn-success' do%>
- <span class="glyphicon glyphicon-ok-circle"></span> Add to cart
- <% end %>
+<p><strong>Quantity:</strong> <%= @product.quantity %></p>
+
+
+<%= link_to addItemToCart_path(@product), class: 'btn btn-success' do%>
+<span class="glyphicon glyphicon-ok-circle"></span> Add to cart
+<% end %>
 
 
 <%= link_to catalog_path, class: 'btn btn-default' do%>
-<span class="glyphicon glyphicon-arrow-left"></span>Back
+<span class="glyphicon glyphicon-arrow-left"></span> Back
 <% end %>
