@@ -3,6 +3,7 @@
 <table class="table">
   <thead>
     <tr>
+      <th>Id</th>
       <th>Data Creazione</th>
       <th>Data Evasione</th>
       <th colspan="4"></th>
@@ -12,6 +13,7 @@
   <tbody>
     <% @orders.each do |order| %>
       <tr>
+        <td><%= order.id %></td>
         <td><%= order.created_at.to_formatted_s(:short) %></td>
         <td> <% if order.evaded %><%= order.updated_at.to_formatted_s(:short) %><% else %> Non Evaso <% end %></td>
         <td><%= link_to 'Show', order, class: "btn btn-default"%></td>

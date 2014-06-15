@@ -26,7 +26,7 @@
 		<tr>
 			<th>Prodotto</th>
 			<th>Quantità</th>
-			<th>Prezzo Unitario</th>
+			<th>Prezzo</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -37,6 +37,11 @@
      	 		<td> <%= number_to_currency(orderLine.unitPrice) %></td>
     		</tr>
    		<% end %>
+      <tr>
+        <td></td>
+        <td></td>
+        <td><%= number_to_currency(@order.orderLines.map{ |i| i.product.price*i.quantity }.sum) %></td>
+      </tr>
 	</tbody>
 </table>
 </div>
