@@ -31,15 +31,26 @@
             <div class="collapse navbar-collapse" >
                 <ul class="nav navbar-nav">
                     <li><a href="/catalog">Guarda i prodotti</a></li>
-                    <li class="active"><a href="/login">Login</a></li>
+                    <% if @_current_user %> 
+                    <li><a href="/cart">Guarda il carrello</a></li>
+                    <li class="active"><a href="/orders">Guarda gli ordini</a></li>
+                    <% else %>
+                    <li><a href="/login">Login</a></li>
+                    <% end %>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
+                    <% if @_current_user %>
+                    <li><a href="/logout">Ciao <%= @_current_user.nickname %>.(Logout)</a></li>
+                    <% else %>
                     <li class="navbar-text">Ciao Anonimo.</li>
+                    <% end %>
                 </ul>
             </div>
         </div>
     </nav>
+
+    
 <div class="container">
 
 <% if notice %>
