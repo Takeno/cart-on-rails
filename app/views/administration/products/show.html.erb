@@ -18,6 +18,10 @@
         <th class="text-right">Quantity:</th>
         <td><%= @product.quantity %></td>
     </tr>
+    <tr>
+        <th class="text-right">Providers:</th>
+        <td><%= @product.providers.map{|p| p.name}.join(', ') %></td>
+    </tr>
 </table>
 
 <%= link_to administration_products_path, class: 'btn btn-info' do %>

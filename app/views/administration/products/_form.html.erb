@@ -26,6 +26,16 @@
     <%= f.label :quantity %>
     <%= f.number_field :quantity, class: 'form-control' %>
   </div>
+  <div class="form-group">
+    <%= f.label :providers %>
+    <%= f.collection_select(:provider_ids, Provider.order(:name), :id, :name, {
+        :selected => @product.provider_ids
+      }, {
+        :multiple => true,
+        :size => 6,
+        :class => 'form-control'
+      }) %>
+  </div>
   <div class="actions">
     <%= f.submit 'Save', class: 'btn btn-success' %>
   </div>

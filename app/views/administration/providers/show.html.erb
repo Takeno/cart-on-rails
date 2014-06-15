@@ -1,5 +1,4 @@
 <h1>Provider details</h1>
-
 <table class="table table-striped">
   <tr>
     <th class="text-right" width="30%">Name:</th>
@@ -20,6 +19,11 @@
       <%= @provider.address.state %>,
       <%= @provider.address.nation %>
     </td>
+  </tr>
+  
+  <tr>
+    <th class="text-right">Products:</th>
+    <td><%= @provider.products.map{|p| p.name}.join(', ') %></td>
   </tr>
 </table>
 

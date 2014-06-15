@@ -16,16 +16,20 @@ class Administration::ProductsController < AdministrationController
   # GET /products/new
   def new
     @product = Product.new
+    @providers = Provider.all
   end
 
   # GET /products/1/edit
   def edit
+    @providers = Provider.all
   end
 
   # POST /products
   # POST /products.json
   def create
     @product = Product.new(product_params)
+    puts @product.providers
+    return
 
     respond_to do |format|
       if @product.save
@@ -70,6 +74,6 @@ class Administration::ProductsController < AdministrationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:name, :description, :price, :quantity)
+      params.require(:product).permit(:name, :description, :price, :quantity, provider_ids: [])
     end
 end

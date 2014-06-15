@@ -1,4 +1,367 @@
 {
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"vettore",
+				"vettoreComplessoUno"
+			],
+			[
+				"order",
+				"orderLine"
+			],
+			[
+				"eav",
+				"evade"
+			],
+			[
+				"admin",
+				"admin_logged_in"
+			],
+			[
+				"quan",
+				"quantity"
+			],
+			[
+				"cart",
+				"cartItem"
+			],
+			[
+				"car",
+				"cartItems"
+			],
+			[
+				"gall",
+				"galleryTitle"
+			],
+			[
+				"I",
+				"IAdvanceIbracoBundle"
+			],
+			[
+				"__",
+				"__SOURCE__"
+			],
+			[
+				"galle",
+				"gallery-item"
+			],
+			[
+				"Gall",
+				"GalleryItem"
+			],
+			[
+				"galler",
+				"galleryItem"
+			],
+			[
+				"Galle",
+				"GalleryItem"
+			],
+			[
+				"Gal",
+				"Gallery"
+			],
+			[
+				"fu",
+				"fullpath"
+			],
+			[
+				"rating",
+				"ratingsCount"
+			],
+			[
+				"fo",
+				"foreach	foreach …"
+			],
+			[
+				"Proje",
+				"ProjectStatus"
+			],
+			[
+				"zip",
+				"zipfile"
+			],
+			[
+				"zp",
+				"zipfile"
+			],
+			[
+				"getUpl",
+				"getUploadWebPath"
+			],
+			[
+				"numer",
+				"numeroFattura"
+			],
+			[
+				"invo",
+				"invoiceGenerator"
+			],
+			[
+				"invoce",
+				"invoiceRow"
+			],
+			[
+				"invoices",
+				"invoiceRows"
+			],
+			[
+				"getclass",
+				"get_class_methods"
+			],
+			[
+				"arramer",
+				"array_merge"
+			],
+			[
+				"getcl",
+				"get_class_methods"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 54.0,
+		"selected_items":
+		[
+			[
+				"Package Control: remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/media/matteo/Dati/workspace/Homework2_Manchi_Monteleone/src/it/uniroma3/signalprocessing/SignalProcessor.java",
+		"/media/matteo/Dati/workspace/Homework2_Manchi_Monteleone/src/it/uniroma3/utility/DiscreteInterpolator.java",
+		"/tmp/Sequenze_SDR_2014/Sequenza_1/output_SNR=0dB.dat",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/layouts/administration.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/layouts/application.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/application/login.html.erb",
+		"/media/matteo/Dati/workspace/Homework2_Manchi_Monteleone/src/it/uniroma3/utility/Scrittore.java",
+		"/media/matteo/Dati/workspace/Homework2_Manchi_Monteleone/src/it/uniroma3/utility/Utils.java",
+		"/media/matteo/Dati/workspace/Homework2_Manchi_Monteleone/src/it/uniroma3/domain/Signal.java",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/catalog/index.html.erb",
+		"/media/matteo/Dati/workspace/Homework2_Manchi_Monteleone/src/it/uniroma3/signalprocessing/SampleReader.java",
+		"/media/matteo/Dati/workspace/Homework2_Manchi_Monteleone/tests/it/uniroma3/domain/ComplexTest.java",
+		"/media/matteo/Dati/workspace/Homework2_Manchi_Monteleone/tests/it/uniroma3/domain/SignalTest.java",
+		"/media/matteo/Dati/workspace/Homework2_Manchi_Monteleone/tests/it/uniroma3/signalprocessing/SignalProcessorTest.java",
+		"/media/matteo/Dati/workspace/Homework2_Manchi_Monteleone/tests/it/uniroma3/signalprocessing/SampleReaderTest.java",
+		"/media/matteo/Dati/workspace/Homework2_Manchi_Monteleone/src/it/uniroma3/domain/Complex.java",
+		"/media/matteo/Dati/workspace/Homework2_Manchi_Monteleone/test/samples.txt",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/catalog/show.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/cart/index.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/administration/customers/_form.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/assets/stylesheets/application.css",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/assets/javascripts/application.js",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/administration/products/show.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/administration/login.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/administration/products/index.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/models/product.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/models/customer.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/administration/products/_form.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/controllers/administration/providers_controller.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/models/address.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/models/provider.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/administration/providers/_form.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/administration/providers/show.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/administration/customers/show.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/administration/customers/edit.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/administration/providers/edit.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/administration/customers/new.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/administration/providers/new.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/administration/customers/index.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/administration/providers/index.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/administration/orders/show.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/administration/orders/index.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/administration/products/edit.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/administration/products/new.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/assets/stylesheets/fonts.css.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/assets/stylesheets/scaffolds.css.scss",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/assets/stylesheets/administration.css.scss",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/assets/javascripts/administration.js.coffee",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/assets/javascripts/customers.js.coffee",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/config/routes.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/controllers/administration/orders_controller.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/controllers/cart_controller.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/controllers/administration_controller.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/administration/index.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/controllers/application_controller.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/controllers/administration/products_controller.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/controllers/administration/customers_controller.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/orders/show.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/db/schema.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/db/migrate/20140614092621_create_orders.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/db/migrate/20140614092633_create_order_lines.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/db/migrate/20140614124019_add_references_to_order_and_order_lines.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/db/migrate/20140531112444_create_addresses.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/db/migrate/20140614100824_create_column_order.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/db/migrate/20140614112016_add_reference_order.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/db/migrate/20140614112736_add_index_order_lines.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/db/migrate/20140614120550_add_index_product_and_customer.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/db/migrate/20140614100510_drop_column_order.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/db/migrate/20140614094506_change_column_name.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/db/migrate/20140531152524_create_cart_items.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/db/migrate/20140531103450_create_customers.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/db/migrate/20140531085442_create_products.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/models/order_line.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/models/order.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/views/application/index.html.erb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/config/application.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/config/environments/development.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/config/database.yml",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/config/secrets.yml",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/config/environment.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/config/boot.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/config/environments/production.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/config/locales/en.yml",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/helpers/administration_helper.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/app/helpers/product_helper.rb",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/config.ru",
+		"/media/matteo/Dati/workspace/siw/www/rails/cart-on-rails/db/migrate/20140531084506_create_products.rb",
+		"/tmp/fz3temp-1/item.php",
+		"/tmp/error.html",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/config/validation.yml",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/config/routing/site/site.yml",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Controller/MobileController.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Controller/SecurityController.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Controller/SiteController.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/EventListener/ProjectListener.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/EventListener/UserListener.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Controller/ProjectController.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/config/services.yml",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Event/EventType.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Entity/LogEntry.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Event/LoggableEvent.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Controller/DefaultController.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Event/ViewEvent.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Event/LoginEvent.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/config/routing/administration/administrator.yml",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Site/project.html.twig",
+		"/tmp/fz3temp-1/import.php",
+		"/tmp/fz3temp-1/datausers.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/config/routing.yml",
+		"/home/matteo/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/AdminBundle/Resources/public/admin/css/sb-admin.css",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Site/login.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/AdminBundle/Resources/views/Admin/left-menu.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/AdminBundle/Resources/views/Admin/base.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/AdminBundle/Resources/views/Admin/demo-top-links.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Admin/base.html.twig",
+		"/media/matteo/Dati/workspace/gastosc/www/sf2/Symfony/src/Impadvance/GasToscBundle/Controller/SitoController.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/app/config/security.yml",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/AdminBundle/Resources/views/Security/login.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/AdminBundle/Controller/SecurityController.php",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/config/routing/administrator.yml",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/AdminBundle/Resources/config/routing.yml",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/app/config/routing.yml",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Project/edit.html.twig",
+		"/media/matteo/Dati/workspace/gastosc/www/sf2/Symfony/src/Impadvance/GasToscBundle/Resources/config/services.yml",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Preview/index.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Preview/Video/show.html.twig",
+		"/media/matteo/Dati/workspace/ibraco/www/Symfony/src/IAdvance/IbracoBundle/Resources/views/Preview/Gallery/show.html.twig"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".getValues\\(\\)\\[([0-9])\\]",
+			"getValues\\(\\).length",
+			"getParameters",
+			"getValues\\(\\).length",
+			".getValues\\(\\)\\[([0-9])\\]",
+			".values\\[([0-9])\\]",
+			".getValues\\(\\)\\[([0-9])\\]",
+			"getValues\\(\\).length",
+			"getValues().length",
+			"itemRatingThanks",
+			"ITEM",
+			"< ",
+			"<td> .*</td>",
+			"< ",
+			"<td> .*</td>",
+			"< ",
+			"delete",
+			"showAction",
+			"_showTabPermissions",
+			"editDocumentForm",
+			"created",
+			"fetchMethodForm",
+			"docupload",
+			"        ",
+			"HEAD",
+			"run_macro_file",
+			"ctrl+d",
+			"delete",
+			"ricetteCorrelate"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			".getSample($1)",
+			"getLength()",
+			".getSample($1)",
+			"getLength()",
+			"PROJECT",
+			"&lt; ",
+			"<td>asdasd</td>",
+			"&lt; ",
+			"<td>asdasd</td>",
+			"&lt; "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
 	"folders":
 	[
 		{
@@ -11,19 +374,104 @@
 		},
 		{
 			"follow_symlinks": true,
-			"path": "app/models"
-		},
-		{
-			"follow_symlinks": true,
 			"path": "app/views"
 		},
 		{
 			"follow_symlinks": true,
-			"path": "config"
-		},
-		{
-			"follow_symlinks": true,
-			"path": "app/helpers"
+			"path": "app/models"
 		}
-	]
+	],
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"project": "cart-on-rails.sublime-workspace",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/media/matteo/Dati/workspace/gastosc/gastosc.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": false,
+	"side_bar_visible": true,
+	"side_bar_width": 147.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }
