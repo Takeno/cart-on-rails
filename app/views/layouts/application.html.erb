@@ -36,18 +36,27 @@
 
             <div class="collapse navbar-collapse" >
                 <ul class="nav navbar-nav">
-                    <li><a href="/catalog">Guarda i prodotti</a></li>
+                    <li class="<%= 'active' if params[:controller] == 'catalog' %>">
+                        <%= link_to 'Guarda i prodotti', catalog_path %>
+                    </li>
                     <% if @_current_user %> 
-                    <li><a href="/cart">Guarda il carrello</a></li>
-                    <li class="active"><a href="/orders">Guarda gli ordini</a></li>
+                    <li class="<%= 'active' if params[:controller] == 'cart' %>">
+                        <%= link_to 'Guarda il carrello', cart_path %>
+                    </li>
+                    <li class="<%= 'active' if params[:controller] == 'orders' %>">
+                        <%= link_to 'Guarda gli ordini', orders_path %>
+                    </li>
                     <% else %>
-                    <li><a href="/login">Login</a></li>
+                    <li>
+                        <%= link_to 'Login', login_path %>
+                    </li>
                     <% end %>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
                     <% if @_current_user %>
-                    <li><a href="/logout">Ciao <%= @_current_user.nickname %> - Logout</a></li>
+                    <li class="navbar-text">Ciao <%= @_current_user.nickname %></li>
+                    <li><%= link_to 'Logout', logout_path %></li>
                     <% else %>
                     <li class="navbar-text">Ciao Anonimo</li>
                     <% end %>

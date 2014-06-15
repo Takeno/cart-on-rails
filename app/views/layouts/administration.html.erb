@@ -34,12 +34,22 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <% unless @admin %>
-                    <li><%= link_to 'Login', administration_login_path %></li>
+                    <li class="<%= 'active' if params[:controller] == 'administration' && params[:action] == 'login' %>">
+                        <%= link_to 'Login', administration_login_path %>
+                    </li>
                     <% else %>
-                    <li><%= link_to 'Guarda i fornitori', administration_providers_path %></li>
-                    <li><%= link_to 'Guarda i prodotti', administration_products_path %></li>
-                    <li><%= link_to 'Guarda i clienti', administration_customers_path %></li>
-                    <li><%= link_to 'Guarda gli ordini', administration_orders_path %></li>
+                    <li class="<%= 'active' if params[:controller] == 'administration/providers' %>">
+                        <%= link_to 'Guarda i fornitori', administration_providers_path %>
+                    </li>
+                    <li class="<%= 'active' if params[:controller] == 'administration/products' %>">
+                        <%= link_to 'Guarda i prodotti', administration_products_path %>
+                    </li>
+                    <li class="<%= 'active' if params[:controller] == 'administration/customers' %>">
+                        <%= link_to 'Guarda i clienti', administration_customers_path %>
+                    </li>
+                    <li class="<%= 'active' if params[:controller] == 'administration/orders' %>">
+                        <%= link_to 'Guarda gli ordini', administration_orders_path %>
+                    </li>
                     <% end %>
                 </ul>
 
