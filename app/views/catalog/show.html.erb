@@ -1,22 +1,16 @@
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+<h2><%= @product.name %></h2>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
+  <h5><strong>Description:</strong></h5>
+  <p><%= @product.description %></p>
 
-<p>
-  <strong>Quantity:</strong>
-  <%= @product.quantity %>
-</p>
+  <h5><strong>Price:</strong></h5>
+  <p><%= @product.price %></p>
+
+
+  <h5><strong>Quantity:</strong></h5>
+  <p><%= @product.quantity %></p>
+
 
  <%= link_to addItemToCart_path(@product), class: 'btn btn-success' do%>
  <span class="glyphicon glyphicon-ok-circle"></span> Add to cart
