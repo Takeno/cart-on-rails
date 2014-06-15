@@ -6,7 +6,9 @@
       <th>Id</th>
       <th>Data Creazione</th>
       <th>Data Evasione</th>
-      <th colspan="4"></th>
+      <th>Number of Items</th>
+      <th>Total Price</th>
+      <th colspan="5"></th>
     </tr>
   </thead>
 
@@ -16,6 +18,8 @@
         <td><%= order.id %></td>
         <td><%= order.created_at.to_formatted_s(:short) %></td>
         <td> <% if order.evaded %><%= order.updated_at.to_formatted_s(:short) %><% else %> Non Evaso <% end %></td>
+        <td><%= order.orderLines.map{ |i| i.quantity }.sum %></td>
+        <td><%= number_to_currency(order.orderLines.map{ |i| i.product.price*i.quantity }.sum) %></td>
         <td><%= link_to 'Show', order, class: "btn btn-default"%></td>
       </tr>
     <% end %>
