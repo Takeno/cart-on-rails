@@ -41,7 +41,7 @@
 
                 <ul class="nav navbar-nav navbar-right">
                     <% if @_current_user %>
-                    <li><a href="/logout">Ciao <%= @_current_user.nickname %>.(Logout)</a></li>
+                    <li><a href="/logout">Ciao <%= @_current_user.nickname %> - Logout</a></li>
                     <% else %>
                     <li class="navbar-text">Ciao Anonimo.</li>
                     <% end %>
@@ -50,7 +50,7 @@
         </div>
     </nav>
 
-    
+
 <div class="container">
 
 <% if notice %>
