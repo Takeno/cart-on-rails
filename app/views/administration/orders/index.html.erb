@@ -3,6 +3,7 @@
 <table class="table">
   <thead>
     <tr>
+      <th>Id</th>
       <th>Creation Date</th>
       <th>Evasion Date</th>
       <th></th>
@@ -12,6 +13,7 @@
   <tbody>
     <% @orders.each do |order| %>
       <tr>
+        <td><%= order.id %></td>
         <td><%= order.created_at.to_formatted_s(:short) %></td>
         <td><% if order.evaded %><%= order.updated_at.to_formatted_s(:short) %><% else %> Not evaded <% end %></td>
         <td>
