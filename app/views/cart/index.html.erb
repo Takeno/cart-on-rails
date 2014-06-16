@@ -21,13 +21,13 @@
         <td>
           <div class="btn-group">
           <%= link_to addItemToCart_path(item.product), :class => "btn btn-default" do%>
-          <span class="glyphicon glyphicon-plus-sign"></span>  Aggiungi 1
+          <span class="glyphicon glyphicon-plus-sign"></span>  Add 1
           <% end %>
           <%= link_to subItemToCart_path(item.product), :class => "btn btn-default"  do%>
-          <span class="glyphicon glyphicon-minus-sign"></span> Rimuovi 1
+          <span class="glyphicon glyphicon-minus-sign"></span> Remove 1
           <% end %> 
           <%= link_to emptyCart_path, :class => "btn btn-danger"  do%>          
-          <span class="glyphicon glyphicon-remove-circle"></span> Rimuovi tutti
+          <span class="glyphicon glyphicon-remove-circle"></span> Remove all
           <% end %>
           <div>
         </td>
@@ -36,7 +36,7 @@
     <% if @cartItems.empty? %>
       <tr>
         <td colspan="4">
-          Nessun prodotto nel carrello
+          Empty
         </td>
       </tr>
     <% else %>

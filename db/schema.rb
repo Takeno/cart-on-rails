@@ -77,6 +77,11 @@ ActiveRecord::Schema.define(version: 20140615153031) do
     t.datetime "updated_at"
   end
 
+  create_table "products_providers", id: false, force: true do |t|
+    t.integer "product_id"
+    t.integer "provider_id"
+  end
+
   create_table "providers", force: true do |t|
     t.string   "name"
     t.string   "vat"
@@ -86,10 +91,5 @@ ActiveRecord::Schema.define(version: 20140615153031) do
   end
 
   add_index "providers", ["address_id"], name: "index_providers_on_address_id"
-
-  create_table "providers_products", id: false, force: true do |t|
-    t.integer "providers_id"
-    t.integer "products_id"
-  end
 
 end

@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
   		session[:current_user_id] = user.id
   		redirect_to root_url
   	else
-  		redirect_to login_path, alert: "Password o Nickname errati"
+  		redirect_to login_path, alert: "Wrong Password/Nickname"
   	end
   end
 

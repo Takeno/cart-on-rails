@@ -13,7 +13,7 @@ class AdministrationController < ActionController::Base
             session[:admin_logged_in] = true
             redirect_to administration_path
         else
-            redirect_to administration_login_path, alert: "Password o Nickname errati"
+            redirect_to administration_login_path, alert: "Wrong Password o Nickname"
         end
     end
 

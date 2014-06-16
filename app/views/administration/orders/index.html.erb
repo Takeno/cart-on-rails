@@ -3,8 +3,8 @@
 <table class="table">
   <thead>
     <tr>
-      <th>Data Creazione</th>
-      <th>Data Evasione</th>
+      <th>Creation Date</th>
+      <th>Evasion Date</th>
       <th></th>
     </tr>
   </thead>
@@ -13,7 +13,7 @@
     <% @orders.each do |order| %>
       <tr>
         <td><%= order.created_at.to_formatted_s(:short) %></td>
-        <td><% if order.evaded %><%= order.updated_at.to_formatted_s(:short) %><% else %> Non Evaso <% end %></td>
+        <td><% if order.evaded %><%= order.updated_at.to_formatted_s(:short) %><% else %> Not evaded <% end %></td>
         <td>
           <%= link_to administration_order_path(order), class: 'btn btn-default' do %>
           <span class="glyphicon glyphicon-search"></span> Show

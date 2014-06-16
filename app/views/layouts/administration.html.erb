@@ -39,16 +39,16 @@
                     </li>
                     <% else %>
                     <li class="<%= 'active' if params[:controller] == 'administration/providers' %>">
-                        <%= link_to 'Guarda i fornitori', administration_providers_path %>
+                        <%= link_to 'Check providers', administration_providers_path %>
                     </li>
                     <li class="<%= 'active' if params[:controller] == 'administration/products' %>">
-                        <%= link_to 'Guarda i prodotti', administration_products_path %>
+                        <%= link_to 'Check products', administration_products_path %>
                     </li>
                     <li class="<%= 'active' if params[:controller] == 'administration/customers' %>">
-                        <%= link_to 'Guarda i clienti', administration_customers_path %>
+                        <%= link_to 'Check customers', administration_customers_path %>
                     </li>
                     <li class="<%= 'active' if params[:controller] == 'administration/orders' %>">
-                        <%= link_to 'Guarda gli ordini', administration_orders_path %>
+                        <%= link_to 'Check orders', administration_orders_path %>
                     </li>
                     <% end %>
                 </ul>

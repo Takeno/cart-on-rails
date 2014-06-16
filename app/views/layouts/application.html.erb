@@ -37,14 +37,14 @@
             <div class="collapse navbar-collapse" >
                 <ul class="nav navbar-nav">
                     <li class="<%= 'active' if params[:controller] == 'catalog' %>">
-                        <%= link_to 'Guarda i prodotti', catalog_path %>
+                        <%= link_to 'Check products', catalog_path %>
                     </li>
                     <% if @_current_user %> 
                     <li class="<%= 'active' if params[:controller] == 'cart' %>">
-                        <%= link_to 'Guarda il carrello', cart_path %>
+                        <%= link_to 'Check cart', cart_path %>
                     </li>
                     <li class="<%= 'active' if params[:controller] == 'orders' %>">
-                        <%= link_to 'Guarda gli ordini', orders_path %>
+                        <%= link_to 'Check orders', orders_path %>
                     </li>
                     <% else %>
                     <li>
@@ -55,10 +55,10 @@
 
                 <ul class="nav navbar-nav navbar-right">
                     <% if @_current_user %>
-                    <li class="navbar-text">Ciao <%= @_current_user.nickname %></li>
+                    <li class="navbar-text">Hi <%= @_current_user.nickname %></li>
                     <li><%= link_to 'Logout', logout_path %></li>
                     <% else %>
-                    <li class="navbar-text">Ciao Anonimo</li>
+                    <li class="navbar-text">Hi anonymous</li>
                     <% end %>
                 </ul>
             </div>
